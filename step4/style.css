@@ -31,3 +31,34 @@
     background-position: 400px 0
   }
 }
+
+.background-masker {
+  background: #fff;
+  position: absolute;
+}
+
+.background-masker.head-top,
+.background-masker.head-bottom {
+  top: 0;
+  left: 70px;
+  right: 0;
+  height: 5px;
+}
+
+.background-masker.head-bottom {
+  top: 25px;
+  height: 10px;
+}
+
+.background-masker.head-left,
+.background-masker.head-right {
+  top: 5px;
+  left: 70px;
+  height: 20px;
+  width: 15px;
+}
+
+.background-masker.head-right {
+  left: 325px;
+  width: 123px;
+}
