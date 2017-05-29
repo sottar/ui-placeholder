@@ -1,0 +1,123 @@
+.placeholder-item {
+  background: #fff;
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 3px;
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 480px;
+  min-height: 156px;
+  box-sizing: border-box;
+}
+
+.animated-background {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeHolderAnimation;
+  animation-timing-function: linear;
+  background: #f6f7f8;
+  background: linear-gradient(to right, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 800px 104px;
+  height: 135px;
+  position: relative;
+}
+
+@keyframes placeHolderAnimation{
+  0% {
+    background-position: -400px 0
+  }
+  100% {
+    background-position: 400px 0
+  }
+}
+
+.background-masker {
+  background: #fff;
+  position: absolute;
+}
+
+.background-masker.head-top,
+.background-masker.head-bottom,
+.background-masker.subhead-bottom {
+  top: 0;
+  left: 70px;
+  right: 0;
+  height: 5px;
+}
+
+.background-masker.head-bottom {
+  top: 25px;
+  height: 10px;
+}
+
+.background-masker.subhead-bottom {
+  top: 47px;
+  height: 23px;
+}
+
+.background-masker.head-left,
+.background-masker.head-right,
+.background-masker.subhead-left,
+.background-masker.subhead-right {
+  top: 5px;
+  left: 70px;
+  height: 20px;
+  width: 15px;
+}
+
+.background-masker.subhead-left,
+.background-masker.subhead-right {
+  top: 35px;
+  height: 12px;
+}
+
+.background-masker.head-right {
+  left: 325px;
+  width: 123px;
+}
+
+.background-masker.subhead-right {
+  left: 285px;
+  width: 163px;
+}
+
+.background-masker.content-top,
+.background-masker.content-first-end,
+.background-masker.content-second-line,
+.background-masker.content-third-line,
+.background-masker.content-second-end,
+.background-masker.content-third-end {
+  top: 70px;
+  left: 0;
+  right: 0;
+  height: 15px;
+}
+
+.background-masker.content-first-end {
+  top: 85px;
+  left: 380px;
+  height: 12px;
+}
+
+.background-masker.content-second-line {
+  top: 97px;
+  height: 8px;
+}
+
+.background-masker.content-second-end {
+  top: 105px;
+  left: 320px;
+  height: 10px;
+}
+
+.background-masker.content-third-line {
+  top: 115px;
+  height: 9px;
+}
+
+.background-masker.content-third-end {
+  top: 124px;
+  left: 440px;
+  height: 11px;
+}
